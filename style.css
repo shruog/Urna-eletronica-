@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* :root {
+    preto back ground numeros 
+} */
+
+body {
+    padding: 0;
+    width: 1920px;
+    height: 100%;
+    background-color: #94989c;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.base_background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ebe7e7;
+}
+
+.tela_info_background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 450px;
+    box-shadow: 0px 3px 4px 0px #020202;
+    border-radius: 6px 0px 0px 6px;
+    background-color: #282b3a;
+}
+
+.tela_info_conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 440px;
+    height: 400px;
+    box-shadow: 0px 3px 3px 0px #1d1d1d;
+    background-color: #d6dbdb;
+}
+
+#canditado_nome {
+    font-size: 2.0em;
+    margin: 10px;
+}
+
+.canditado_photo {
+    width: 150px;
+    height: 150px;
+    background-color: #cc6464;
+}
+
+#numeros_digitados {
+    display: flex;
+    flex-direction: row;
+     justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    height: 100px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.numero_digitado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    font-size: 45px;
+    font-weight: bolder;
+    border: 2px solid black;
+}
+
+.tela_info_conteudo p {
+    width: 95%;
+    height: 250px;
+    font-size: 10px;
+    font-weight: bold;
+    border: 1px solid #020202;
+}
+
+.tela_numeros_background {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 400px;
+    height: 480px;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid #020202;
+    background-color: #6d6d70;
+}
+
+.tela_numeros_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    font-size: 3.2em;
+    border: 4px solid #242630;
+    background-color: #f6f6f6;
+}
+
+.tela_numeros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 370px;
+    background-color: #242630;
+}
+
+button {
+    cursor: pointer;
+}
+
+.numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 60px;
+    background-color: #1a1a1a;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px #020202 inset, 0 0 0 2px #020202 inset, 0 5px 0 0 #020202, 0 5px 0 1px rgba(0, 0, 0, 0.4), 0 5px 4px 1px rgba(0, 0, 0, 0.5);
+    color: white !important;
+    display: block;
+    font-size: 2.5em;
+    position: relative;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    margin: 10px;
+    text-decoration: none !important;
+    transition: all .9ms linear;
+}
+
+.numeros:active {
+    background-color: #1a1a1a;
+    top: 4px;
+    box-shadow: 0 0 0 1px #020202 inset, 0 0 0 2px #020202 inset, 0 0 0 0 #020202, 0 0 0 1px rgba(0, 0, 0, 0.4), 0 0px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.numeros:hover {
+    background-color: #1a1a1a;
+    position: relative;
+    top: 0px;
+    box-shadow: 0 0 0 1px #020202 inset, 0 0 0 2px #020202 inset, 0 5px 0 0 #020202, 0 5px 0 1px rgba(0, 0, 0, 0.4), 0 5px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.numeros:active {
+    background-color: #1a1a1a;
+    top: 4px;
+    box-shadow: 0 0 0 1px #020202 inset, 0 0 0 2px #020202 inset, 0 0 0 0 #020202, 0 0 0 1px rgba(0, 0, 0, 0.4), 0 0px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.tela_numeros_opcoes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #242630;
+}
+
+/* botão de votar em branco */
+
+#opcao_branco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: #f0ffff;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px #a1a1a1 inset, 0 0 0 2px #a1a1a1 inset, 0 5px 0 0 #a1a1a1, 0 5px 0 1px rgba(0, 0, 0, 0.4), 0 5px 4px 1px rgba(0, 0, 0, 0.5);
+    color: black !important;
+    display: block;
+    font-size: 1.6em;
+    position: relative;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none !important;
+    transition: all .9ms linear;
+}
+
+#opcao_branco:active {
+    background-color: #f0ffff;
+    top: 4px;
+    box-shadow: 0 0 0 1px #a1a1a1 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 0 #a1a1a1, 0 0 0 1px rgba(0, 0, 0, 0.4), 0 0px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+#opcao_branco:hover {
+    background-color: #f0ffff;
+    position: relative;
+    top: 0px;
+    box-shadow: 0 0 0 1px #a1a1a1 inset, 0 0 0 2px #a1a1a1 inset, 0 5px 0 0 #a1a1a1, 0 5px 0 1px rgba(0, 0, 0, 0.4), 0 5px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+#opcao_branco:active {
+    background-color: #f0ffff;
+    top: 4px;
+    box-shadow: 0 0 0 1px #a1a1a1 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 0 #a1a1a1, 0 0 0 1px rgba(0, 0, 0, 0.4), 0 0px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* botão de corrigir o voto */
+
+#opcao_corrige {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: #FE9A1F;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px #ad6103 inset, 0 0 0 2px #ad6103 inset, 0 5px 0 0 #ad6103, 0 5px 0 1px rgba(0, 0, 0, 0.4), 0 5px 4px 1px rgba(0, 0, 0, 0.5);
+    color: black !important;
+    display: block;
+    font-size: 1.6em;
+    position: relative;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none !important;
+    transition: all .9ms linear;
+}
+
+#opcao_corrige:active {
+    background-color: #FE9A1F;
+    top: 4px;
+    box-shadow: 0 0 0 1px #ad6103 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 0 #ad6103, 0 0 0 1px rgba(0, 0, 0, 0.4), 0 0px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+#opcao_corrige:hover {
+    background-color: #FE9A1F;
+    position: relative;
+    top: 0px;
+    box-shadow: 0 0 0 1px #ad6103 inset, 0 0 0 2px #ad6103 inset, 0 5px 0 0 #ad6103, 0 5px 0 1px rgba(0, 0, 0, 0.4), 0 5px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+#opcao_corrige:active {
+    background-color: #FE9A1F;
+    top: 4px;
+    box-shadow: 0 0 0 1px #ad6103 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 0 #ad6103, 0 0 0 1px rgba(0, 0, 0, 0.4), 0 0px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*botão de confirmar o voto*/
+
+#opcao_confirma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 60px;
+    background-color: #55AF8D;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px #1d5f46 inset, 0 0 0 2px #1d5f46 inset, 0 5px 0 0 #1d5f46, 0 5px 0 1px rgba(0, 0, 0, 0.4), 0 5px 4px 1px rgba(0, 0, 0, 0.5);
+    color: black !important;
+    display: block;
+    font-size: 1.6em;
+    position: relative;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none !important;
+    transition: all .9ms linear;
+}
+
+#opcao_confirma:active {
+    background-color: #55AF8D;
+    top: 4px;
+    box-shadow: 0 0 0 1px #1d5f46 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 0 #1d5f46, 0 0 0 1px rgba(0, 0, 0, 0.4), 0 0px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+#opcao_confirma:hover {
+    background-color: #55AF8D;
+    position: relative;
+    top: 0px;
+    box-shadow: 0 0 0 1px #1d5f46 inset, 0 0 0 2px #1d5f46 inset, 0 5px 0 0 #1d5f46, 0 5px 0 1px rgba(0, 0, 0, 0.4), 0 5px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+#opcao_confirma:active {
+    background-color: #55AF8D;
+    top: 4px;
+    box-shadow: 0 0 0 1px #1d5f46 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 0 #1d5f46, 0 0 0 1px rgba(0, 0, 0, 0.4), 0 0px 8px 1px rgba(0, 0, 0, 0.5);
+}
